@@ -361,6 +361,6 @@ Let's now test our new bot with Lambda integration!
 
 22. Click the **Build** button.
 23. Once the build has completed, click the **Test** button.
-24. Type `I would like a small watermelon energy drink`. If successful, there should be a response of “Great! your {drink} will be available for pickup soon. Thanks for using CanteenBot!”.
+24. Type `I would like a small watermelon energy drink`. If successful, there should be a response of “Great! your small watermelon energy drink will be available for pickup soon. Thanks for using CanteenBot!”.
 
 If successful, there should be a response of “Great! your {drink} will be available for pickup soon. Thanks for using CanteenBot!”.
