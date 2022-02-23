@@ -31,7 +31,7 @@ In this workshop you are going to build a chatbot and learn how the voice user i
 * **Children's Online Privacy Protection Act (COPPA):** No
 * **Session timeout:** 5 minutes
 
-* Click **Next** to proceed to the language settings.
+Click **Next** to proceed to the language settings.
 
 5. On the _Add language to bot_ screen, use the following settings:
 
@@ -40,7 +40,7 @@ In this workshop you are going to build a chatbot and learn how the voice user i
 * **Voice interaction:** Olivia
 * **Intent classification confidence score threshold:** 0.40
 
-* Click **Done** to create your chatbot.
+Click **Done** to create your chatbot.
 
 ## Intents
 
@@ -55,17 +55,17 @@ Let's create an intent to order drinks.
 
 ### Utterances
 
-Scroll to the _Sample utterances_ section. Utterances are what a user might say to trigger this intent. For example,  user might say "Can I order a pizza please" or "I want to order a pizza".
+Scroll to the _Sample utterances_ section. Utterances are what a user might say to trigger this intent. For example, the user might say "Can I order a pizza please" or "I want to order a pizza".
 
-Note, the user does not need to exactly say these phrases - Amazon Lex extrapolates based on the sample utterances to interpret any user input that may vary from the samples.
+Note, the user does not need to _exactly_ say these phrases - Amazon Lex extrapolates based on the sample utterances to interpret any user input that may vary from the samples.
 
 7. Input the sample utterances by copying and pasting the below text in the sample utterances text box and pressing `Enter`. You can also input other utterances that you think a user would say when they order drinks from the canteen.
 
-`I would like a {size} {flavour} {drink} please`
+    I would like a {size} {flavour} {drink} please
 
-`Can I have a {size} {drink}`
+    Can I have a {size} {drink}
 
-`I want a {drink}`
+    I want a {drink}
 
 ![Lex-Utterances.png](images/Lex-Utterances.png)
 
