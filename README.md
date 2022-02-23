@@ -4,7 +4,7 @@
 
 Welcome to the Amazon Lex workshop!
 
-Amazon Lex is a managed artificial intelligence (AI) service, using natural language processing, allowing you to easily build conversational chatbots - without any experience of knowledge of machine learning! In fact, Lex uses the same conversational engine which powers Amazon Alexa devices.
+Amazon Lex is a managed artificial intelligence (AI) service which uses natural language processing. Lex allows you to easily build conversational chatbots - without any experience or knowledge of machine learning! In fact, Lex uses the same conversational engine which powers Amazon Alexa devices.
 
 In this workshop you are going to build a chatbot and learn how the voice user interface works with Amazon Lex.
 
@@ -31,7 +31,7 @@ In this workshop you are going to build a chatbot and learn how the voice user i
 * **Children's Online Privacy Protection Act (COPPA):** No
 * **Session timeout:** 5 minutes
 
-Click **Next** to proceed to the language settings.
+* Click **Next** to proceed to the language settings.
 
 5. On the _Add language to bot_ screen, use the following settings:
 
@@ -40,7 +40,7 @@ Click **Next** to proceed to the language settings.
 * **Voice interaction:** Olivia
 * **Intent classification confidence score threshold:** 0.40
 
-Click **Done** to create your chatbot.
+* Click **Done** to create your chatbot.
 
 ## Intents
 
