@@ -61,11 +61,11 @@ Note, the user does not need to _exactly_ say these phrases - Amazon Lex extrapo
 
 7. Input the sample utterances by copying and pasting the below text in the sample utterances text box and pressing `Enter`. You can also input other utterances that you think a user would say when they order drinks from the canteen.
 
-    I would like a {size} {flavour} {drink} please
+    `I would like a {size} {flavour} {drink} please`
 
-    Can I have a {size} {drink}
+    `Can I have a {size} {drink}`
 
-    I want a {drink}
+    `I want a {drink}`
 
 ![Lex-Utterances.png](images/Lex-Utterances.png)
 
