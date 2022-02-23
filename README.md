@@ -73,7 +73,7 @@ Note, the user does not need to _exactly_ say these phrases - Amazon Lex extrapo
 
 In the utterances you would have noticed things like `{size}` , `{flavour}` , and `{drink}`. These are called slots.
 
-Slots are elements within your utterances that may change based on the user wanting different variations to their actions. For example, "I want to order a pepperoni pizza" versus "I want to order a vegetarian pizza."
+Slots are elements within your utterances that may change based on the user wanting different variations to their actions. For example, "I want to order a **pepperoni** pizza" versus "I want to order a **vegetarian** pizza."
 
 In this example, _pepperoni_ and _vegetarian_ can be classified as a slot called "flavour". This means the sample utterance can be fulfilled with "I want to order a `{flavour}` pizza" instead.
 
@@ -82,8 +82,8 @@ When the chatbot starts running, Amazon Lex prompts the user for specific slot v
 #### Create the Slot Types
 
 Each slot has a type. You can create your custom slot types or use built-in slot types. For example, you might create and use the following slot types for the intent:
-* **Size** - with values Small, Medium, and Large
-* **Crust** - with values Thick and Thin
+* **Size** - with values `Small`, `Medium`, and `Large`
+* **Crust** - with values `Thick` and `Thin`
 
 Amazon Lex also provides built-in slot types. For example, `AMAZON.NUMBER` is a built-in slot type that you can use for the number of pizzas ordered.
 
@@ -110,7 +110,7 @@ Before we create our slots we need to define the slot types we will use.
 * **Slot type name:** DrinkType
     * **Values:** `ice tea` , `energy drink` , `flavoured water`
 
-So, we now need to define our slots. Scroll to the _Slots_ section.
+Now we have created our slot types, we can define the slots themselves. Scroll to the _Slots_ section.
 
 #### Create the Slots
 
@@ -149,46 +149,47 @@ and…
 * **Slot type:** `DrinkType`
 * **Prompts:** `what drink did you want?`
 
-25. P.S. If you scroll back up to the _Sample utterances_ section you will see the slots are now coloured to match the colour beside the respective Slot.
+P.S. If you scroll back up to the _Sample utterances_ section you will see the slots are now coloured to match the colour beside the respective Slot.
 
 ![Lex-Slots-Coloured.png](images/Lex-Slots-Coloured.png)
 
-26. Click **Save intent** at the bottom of the screen to save the changes.
+25. Click **Save intent** at the bottom of the screen to save the changes.
 
 ## Ready to test!
 
 We are now ready to test our chatbot!
 
-27. Click **Build** at the bottom of the screen. This may take a few minutes. You can see progress in the blue bar at the top of the screen.
-28. Once the build has completed click the **Test** button to test the chatbot. Try talking to the chatbot with messages like: `Can I order a drink?`.
-29. Congratulations on building your first chatbot!
+26. Click **Build** at the bottom of the screen. This may take a few minutes. You can see progress in the blue bar at the top of the screen.
+27. Once the build has completed click the **Test** button to test the chatbot. Try talking to the chatbot with a message like: `Can I order a drink?`.
+
+Congratulations on building your first chatbot!
 
 ## Adding buttons
 
 Sometimes you may want to make the responses available to users as buttons. You can add that by specifying cards in your slots.
 
-30. Go back into the `OrderDrink` intent and scroll down to _Slots_
-31. Choose a slot where you would like to see buttons for the responses and expand the slot by clicking the disclosure arrow on the left.
+28. Go back into the `OrderDrink` intent and scroll down to _Slots_
+29. Choose a slot where you would like to see buttons for the responses and expand the slot by clicking the disclosure arrow on the left.
 
 ![Lex-Slot-Size.png](images/Lex-Slot-Size.png)
 
-32. Click the **Advanced options** button.
-33. In the screen that appears, scroll to _Slot prompts_ and expand the prompt by clicking the disclosure arrow on the left.
+30. Click the **Advanced options** button.
+31. In the screen that appears, scroll to _Slot prompts_ and expand the prompt by clicking the disclosure arrow on the left.
 
 ![Lex-Slot-Prompts.png](images/Lex-Slot-Prompts.png)
 
-35. Click **More prompt options**.
-36. In the _Slot prompts_ screen that appears, click **Add** → **Add card group**. Use the following settings:
+32. Click **More prompt options**.
+33. In the _Slot prompts_ screen that appears, click **Add** → **Add card group**. Use the following settings:
 * **Image URL:** _Leave blank_
 * **Title:** Drink sizes
 * **Subtitle:** What size drink would you like?
-* Expand **Buttons** and click **Add button** to add a button for each response you would like to provide. The button **title** is a display value, and the button **value** is sent to Lex, so that should match the slot type values. For example, the title for a button might be `Small` and the value `small`.
+* Expand **Buttons** and click **Add button** to add a button for each response you would like to provide. The button **title** is displayed to the user, and the button **value** is sent to Lex - so the value should match the slot type values. For example, the title for a button might be `Small` and the value `small`.
 
 ![Lex-Slot-Buttons.png](images/Lex-Slot-Buttons.png)
 
-37. When you have added all your buttons, click the **Update prompts** button.
-38. On the next screen, click **Update slot**
-39. Finally, build and test your chatbot again and try it out - when prompted for size you should now be presented with the options in buttons.
+34. When you have added all your buttons, click the **Update prompts** button.
+35. On the next screen, click **Update slot**
+36. Finally, build and test your chatbot again and try it out - when prompted for size you should now be presented with the options in buttons.
 
 ![Lex-Buttons.png](images/Lex-Buttons.png)
 
@@ -214,7 +215,7 @@ Lambda allows you to write code which performs custom actions in response to eve
 
 ![Lambda-Create-Function.png](images/Lambda-Create-Function.png)
 
-3. Select `Author from scratch` and set the function name as `CanteenBot`. Have the runtime set to`Node.js.14.x.` and click `Create function`.
+3. Select `Author from scratch` and set the function name as `CanteenBot`. Have the runtime set to `Node.js.14.x.` and click `Create function`.
 
 ![Lambda-Function-Settings.png](images/Lambda-Function-Settings.png)
 
@@ -309,7 +310,7 @@ function close(intentName, fulfillmentState, message, responseCard) {
 
  /*MIT No Attribution
 
- Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ Copyright 2022 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
  Permission is hereby granted, free of charge, to any person obtaining a copy of this
  software and associated documentation files (the "Software"), to deal in the Software
@@ -348,6 +349,7 @@ We now need to link the Lambda function to the intent.
 ![Lex-Aliases.png](images/Lex-Aliases.png)
 
 17. On the alias screen, in the _Languages_ section click the language which the bot has been configured for - this should be **English (AU)**
+
  ![Lex-Language.png](images/Lex-Language.png)
  
  18. You can now configure the Lambda function to run. In the **Source** drop-down select `CanteenBot` and in the **Lambda function version or alias** select `$LATEST`.
@@ -361,6 +363,6 @@ Let's now test our new bot with Lambda integration!
 
 22. Click the **Build** button.
 23. Once the build has completed, click the **Test** button.
-24. Type `I would like a small watermelon energy drink`. If successful, there should be a response of “Great! your small watermelon energy drink will be available for pickup soon. Thanks for using CanteenBot!”.
+24. Type `I would like a small watermelon energy drink`.
 
-If successful, there should be a response of “Great! your {drink} will be available for pickup soon. Thanks for using CanteenBot!”.
+If successful, there should be a response of “Great! your small watermelon energy drink will be available for pickup soon. Thanks for using CanteenBot!”.
