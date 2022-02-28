@@ -110,8 +110,6 @@ Before we create our slots we need to define the slot types we will use.
 * **Slot type name:** DrinkType
     * **Values:** `ice tea` , `energy drink` , `flavoured water`
 
-Now we have created our slot types, we can define the slots themselves. Scroll to the _Slots_ section.
-
 #### Create the Slots
 
 Now that we have created our Slot types, we can create the Slots.
