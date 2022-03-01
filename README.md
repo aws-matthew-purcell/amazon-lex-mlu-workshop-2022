@@ -8,9 +8,30 @@ Amazon Lex is a managed artificial intelligence (AI) service which uses natural 
 
 In this workshop you are going to build a chatbot and learn how the voice user interface works with Amazon Lex.
 
+## Setup
+We first need to get you setup with an AWS account to complete this workshop. Accounts are being provided so you don't need to use your own.
+
+1. Go to [https://dashboard.eventengine.run/login](https://dashboard.eventengine.run/login) and you will be redirected to the page below.
+
+![png](images/event-engine1.JPG)
+
+2. Enter the event hash you have received from your instructor and click on **Accept Terms & Login**.
+
+3. Click **Email One-Time Password (OTP)** and you will be redirected to this page:
+
+![png](images/otp.JPG)
+
+4. Enter your email address and click on **Send passcode**. You will then see this screen:
+
+![png](images/passcode.JPG)
+
+5. Check your mailbox, copy-paste the one-time password, and click **Sign In**.
+6. You will be redirected to the "Team Dashboard". Click **AWS Console**.
+7. On the next screen, click **Open AWS Console** and you will be redirected to the AWS Console, ready to start the workshop!
+
 ## Create the chatbot
 
-1. Log into the AWS Console and search for **Amazon Lex** in the search bar:
+1. In the AWS Console and search for **Amazon Lex** in the search bar:
 
 ![Lex-Search-Bar.png](images/Lex-Search-Bar.png)
 
